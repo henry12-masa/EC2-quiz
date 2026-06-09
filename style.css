@@ -164,3 +164,87 @@ main{
     font-size:15px;
   }
 }
+
+/* ---------- レイアウト ---------- */
+
+.layout{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+/* ---------- 広告 ---------- */
+
+.ad-box{
+
+    width:220px;
+
+    min-height:600px;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    padding:10px;
+
+    box-shadow:0 0 6px rgba(0,0,0,.1);
+
+    box-sizing:border-box;
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+/* ---------- クイズ ---------- */
+
+.quiz-box{
+
+    flex:1;
+
+    max-width:900px;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 8px rgba(0,0,0,.15);
+
+}
+
+/* ---------- スマホ ---------- */
+
+@media(max-width:1000px){
+
+    .layout{
+
+        display:block;
+
+    }
+
+    .ad-box{
+
+        display:none;
+
+    }
+
+    .quiz-box{
+
+        max-width:100%;
+
+        width:100%;
+
+    }
+
+}
