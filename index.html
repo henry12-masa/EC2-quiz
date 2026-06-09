@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>AWSサービス別クイズ</title>
+<meta name="description" content="EC2・S3・IAM・VPC・Route 53を学べるAWSサービス別無料クイズ。各カテゴリ100問から50問ランダム出題。">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1 id="pageTitle">AWSサービス別クイズ</h1>
+  <p id="pageDesc">EC2・S3・IAM・VPC・Route 53を50問ランダムで学習</p>
+</header>
+
+<nav id="quizList"></nav>
+
+<main>
+  <section class="quiz-box">
+    <div class="status">
+      <span id="counter"></span>
+      <span id="score"></span>
+    </div>
+
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <h2 id="question"></h2>
+    <div id="choices"></div>
+    <p id="result"></p>
+
+    <button id="nextBtn">次の問題</button>
+  </section>
+</main>
+
+<script src="data/ec2.js"></script>
+<script src="data/s3.js"></script>
+<script src="data/iam.js"></script>
+<script src="data/vpc.js"></script>
+<script src="data/route53.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
